@@ -3,7 +3,7 @@ env:
   variables:
     APP_NAME: "angular-aws-devops"
     CACHE_CONTROL: "86400"
-    S3_BUCKET: {-INSERT BUCKET NAME FOR STATIC WEBSITE HERE-}
+    S3_BUCKET: "angular-aws-devops-bucket"
     BUILD_FOLDER: "dist"
     BUILD_ENV: "prod"
 phases:
