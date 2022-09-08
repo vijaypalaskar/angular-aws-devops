@@ -22,8 +22,4 @@ phases:
     commands:
       - aws s3 cp ${BUILD_FOLDER} s3://${S3_BUCKET} --recursive --acl public-read --cache-control "max-age=${CACHE_CONTROL}"
       - echo Build completed on `date`
-artifacts:
-    files:
-        - '**/*'
-    base-directory: 'dist*'
-    discard-paths: yes
+
